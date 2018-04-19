@@ -1,0 +1,19 @@
+<nav class="top-nav"
+     [class.responsive]="responsive">
+
+  <a routerLink=""
+     routerLinkActive="active"
+     class="top-nav__item top-nav__item--brand">
+    Blitz
+  </a>
+  <a (click)="toogleResponsiveNavbar()"
+     routerLink="/index"
+     routerLinkActive="active"
+     class="top-nav__item">
+    Accueil
+  </a>
+  <span class="top-nav__item top-nav__item--icon"
+        (click)="toogleResponsiveNavbar()">
+    &#9776;
+  </span>
+</nav>
