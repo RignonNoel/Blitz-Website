@@ -1,0 +1,9 @@
+<div class="box">
+  <div class="box__content">
+    <ng-content></ng-content>
+  </div>
+  <a class="box__action" (click)="triggerAction()" *ngIf="actionLabel">
+    <i class="icon icon-plus icon--2x"></i>
+    {{ actionLabel | translate }}
+  </a>
+</div>

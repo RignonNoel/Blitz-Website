@@ -39,11 +39,8 @@ export class CouponService extends GlobalService {
     params = params.set('offset', offset.toString());
     if (filters != null) {
       for (const filter of filters) {
-        if (filter.name === 'is_active') {
-          params = params.set('is_active', filter.value);
-        }
-        if (filter.name === 'end_time__gte') {
-          params = params.set('end_time__gte', filter.value);
+        if (filter.name === 'owner') {
+          params = params.set('owner', filter.value);
         }
       }
     }

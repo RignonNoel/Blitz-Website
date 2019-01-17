@@ -120,6 +120,8 @@ import { CartPaymentComponent } from './components/shared/cart-payment/cart-paym
 import {CouponService} from './services/coupon.service';
 import { CouponsComponent } from './components/pages/admin/coupons/coupons.component';
 import {RetirementWaitingQueueService} from './services/retirementWaitingQueue.service';
+import { ProfileCouponsComponent } from './components/pages/profile/profile-coupons/profile-coupons.component';
+import { BoxComponent } from './components/shared/box/box.component';
 
 registerLocaleData(localeFr);
 
@@ -465,6 +467,8 @@ const appRoutes = [
     TableRetirementReservationsComponent,
     CartPaymentComponent,
     CouponsComponent,
+    ProfileCouponsComponent,
+    BoxComponent,
   ],
   imports: [
     BrowserModule,
